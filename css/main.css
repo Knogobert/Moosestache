@@ -1,0 +1,313 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:300,900);
+/* CSS Document */
+
+/* Main formatting */
+
+*, *:before, *:after{
+  box-sizing: border-box;
+  font: 300 1em/1.5 'Merriweather', serif;
+  color: #fffcf3; /* Cream White #fffcf3 . color: chooses fontcolor on all of wrapper <p> */
+  padding: 0; margin: 0;
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+	background: #1e1814; /*background-image:url("background/bark3.png"); #2f251e orig*/
+}
+
+.wrapper{
+	width: 100%;
+	min-height: 1000px;
+}
+
+.wrapper-content{
+	-webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:    0px 10px 10px 0px rgba(0, 0, 0, 0.5);
+	box-shadow:         0px 10px 10px 0px rgba(0, 0, 0, 0.5); /* FOOTER shadow */
+}
+
+/* Text Formatting */
+
+h1, h2, h3, h4, h5, h6 {
+	color:#1e1e1e;
+}
+	h1{
+	font-size: 3em;
+    font-weight: 900;
+    padding: 0 0 20px 0;
+	}
+	h2{
+    font-size: 2em;
+    font-weight: 900;
+    padding: 0 0 15px 0;
+	}
+	p{
+    font-size: 1.25em;
+    padding: 0 0 40px 0;
+    }
+
+/* Script Formatting */
+
+/* Override site */
+#main {width: 100%; padding:0; }
+
+.content-asset p {margin:0 auto;}
+
+.breadcrumb {display:none;}
+
+/* Helpers */
+/**************************/
+.margin-top-10 {padding-top:10px;}
+
+.margin-bot-10 {padding-bottom:10px;}
+
+/* Typography */
+/**************************/
+
+#parallax-wrapper h1, #parallax-wrapper h2, #parallax-wrapper h3 {
+font-family:'Oswald', sans-serif;
+color: #fefbf1; 
+font-weight:400; 
+text-transform:uppercase;
+}
+
+#parallax-wrapper h1 {
+font-size:24px;  
+padding:0; 
+margin:0;}
+
+#parallax-wrapper h2 {
+font-size:70px; 
+letter-spacing:10px; 
+text-align:center;
+z-index:10; 
+opacity:.8;}
+
+#parallax-wrapper h3 {
+font-size:14px; 
+line-height:0;  
+letter-spacing:8px; 
+}
+
+#parallax-wrapper p {
+font-family: 'Source Sans Pro', sans-serif;
+font-weight:400;
+font-size:14px;
+line-height:24px;
+}
+
+.first-character {
+font-weight:400;
+float:left;
+font-size:84px;
+line-height:64px;
+padding-top:4px;
+padding-right:8px;
+padding-left:3px;
+font-family:'Source Sans Pro', sans-serif;
+}
+
+	.one {color: #535d41;}
+	.two {color: #535d41;}
+	.three {color: #535d41;}
+
+/* Section - Title */
+/**************************/
+#parallax-wrapper .title {
+background: #DDD; /* dark brown #29211C */
+/*background-image:  url("background/wood-2X.png");*/
+/*background-image:  url("background/bark3.png");*/
+padding: 60px; 
+margin:0 auto; 
+text-align:center;
+position: fixed;
+width:100%;
+z-index:1000;
+
+}
+
+#parallax-wrapper .title h1 {
+font-size:35px; 
+letter-spacing:8px;}
+
+
+
+/* Section - Block */
+/**************************/
+#parallax-wrapper .block {
+background: #DDD; /*#29211C*/
+width:820px;
+text-align:justify;
+
+margin:0 auto;
+padding:60px;
+margin-top:0px;
+margin-bottom: 100px; /* Change for block p margin value */
+
+-webkit-box-shadow:  7px 7px 15px 0px rgba(0, 0, 0, 0.20),  -7px -7px 15px 0px rgba(0, 0, 0, 0.20);
+-moz-box-shadow:     7px 7px 15px 0px rgba(0, 0, 0, 0.20),  -7px -7px 15px 0px rgba(0, 0, 0, 0.20);
+box-shadow:          7px 7px 15px 0px rgba(0, 0, 0, 0.20),  -7px -7px 15px 0px rgba(0, 0, 0, 0.20);
+
+/*-webkit-box-shadow: inset -7px -7px 15px 0px rgba(0, 0, 0, 0.75);
+-moz-box-shadow:    inset -7px -7px 15px 0px rgba(0, 0, 0, 0.75);
+box-shadow:         inset -7px -7px 15px 0px rgba(0, 0, 0, 0.75);*/
+}
+
+
+
+#parallax-wrapper .block p{
+color: #29211C; /*color on block text <p> (#2f251e)*/
+}
+
+#parallax-wrapper .block-gray {
+background: #f3f3f3;
+padding: 60px;
+}
+
+#parallax-wrapper .section-overlay-mask {
+position: absolute; 
+top: 0; left: 0; 
+width: 100%; 
+height: 100%; 
+background-color: black; 
+opacity: 0.70;
+}
+
+
+
+/* Section - Parallax */
+/**************************/
+.block-bg {
+	width:100%;
+	background: #2f251e;
+	position: relative;
+	left:0;
+	right:0;
+	margin-top: -100px;
+	-webkit-box-shadow: 0px -10px 30px 0px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:    0px -10px 30px 0px rgba(0, 0, 0, 0.5);
+	box-shadow:         0px -10px 30px 0px rgba(0, 0, 0, 0.5);
+}
+
+#parallax-wrapper .parallax-one, #parallax-wrapper .parallax-two, #parallax-wrapper .parallax-three {
+	padding-top: 300px;
+	padding-bottom: 200px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	background-attachment: fixed; 
+	background-size: cover; 
+	-moz-background-size: cover; 
+	-webkit-background-size: cover; 
+	background-repeat: no-repeat; 
+	background-position: center center;
+}
+#parallax-wrapper .parallax-one {
+	height:1000px;
+	padding-top: 350px; 
+	background-image: url(../img/reindeer.jpg);
+}
+#parallax-wrapper .parallax-two {
+	background-image: url(../img/log.jpg); 
+}
+#parallax-wrapper .parallax-three {
+	background-image: url(../img/forestlol4.jpg); 
+}
+
+/* Footer */
+/**************************/
+
+.fixed-footer{
+  width: 100%;
+  height: 250px;
+  background: #29211C; /*#1e1814;*/
+  position: fixed; left: 0; bottom: 0;
+  z-index: -100;
+
+}
+
+.content{
+  width: 850px; 
+  margin: auto;
+  margin-bottom: 250px; /* Same height as footer */
+  padding: 0px 0;
+}
+
+div#footer-content {
+	clear: both;
+	margin: auto;
+	height: 250px;
+	background-color: none;}
+
+div .footer-float {
+	float: left;
+    width: 33.3333%; /* NEEED to change when viewport reaches more than 125 % zoom */
+    padding-top: 20px;
+    text-align: center;
+    background-color: none;
+}
+
+div .footer-float p{
+	padding-top: 80px; /* footer text namnen (sven park o anton and) paddas ner lite mer */
+	color: #a4a4a4;
+}
+
+div #footer-bottom{
+	clear: both;
+	background-color: none;
+	margin-left:-15px;
+}
+
+p.footer-bottom-text{
+    color: #a4a4a4;
+    font-size: 0.6em;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.fixed-footer img{
+    border: none;
+    margin-top: 200px;
+    height: 200px;
+    min-height: 60px;
+    max-height: 200px;
+}
+    
+/* Extras */
+/**************************/
+#parallax-wrapper .line-break {
+	position:relative;
+	margin: 0 auto;
+	margin-top: -10px;
+	margin-bottom:15px;
+	padding: 0;
+	border: 0;
+    height: 1px;
+    
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(255,255,255,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(255,255,255,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(255,255,255,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(255,255,255,0.75), rgba(0,0,0,0)); 
+}
+/*{border-bottom:5px solid white;  width: 150px; margin:0 auto; } ORIG */
+
+/* Media Queries */
+/**************************/
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #parallax-wrapper .block {padding: 40px; width:620px;}
+}
+@media screen and (max-width: 767px) {
+  #parallax-wrapper .block {padding: 30px; width:420px;}
+  #parallax-wrapper h2 {font-size:30px;}
+  #parallax-wrapper .block {padding: 30px;}
+  #parallax-wrapper .parallax-one, #parallax-wrapper .parallax-two, #parallax-wrapper .parallax-three {padding-top:100px; padding-bottom:100px;}
+}
+@media screen and (max-width: 479px) {
+  #parallax-wrapper .block {padding: 30px 15px; width:290px;}
+}

@@ -1,0 +1,46 @@
+/* Color scheme */
+
+/* Base colors */
+.white {
+    color:#d5d5d5;
+}
+.lightgrey {
+    color:#1e1e1e;
+}
+.black {
+    color:#000000;
+}
+
+/* Brown shades */
+.brown-1 {
+    color:#291406;
+}
+.brown-2 {
+    color:#29180b;
+}
+.brown-3 {
+    color:#291b11;
+}
+.brown-4 {
+    color:#291e16;
+}
+.brown-5 {
+    color:#29211c;
+}
+
+/* Green shades */
+.green-1 {
+    color:#0d2f02;
+}
+.green-2 {
+    color:#0f2608;
+}
+.green-3 {
+    color:#14270e;
+}
+.green-4 {
+    color:#182714;
+}
+.green-5 {
+    color:#1d2719;
+}
