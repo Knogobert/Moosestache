@@ -17,9 +17,18 @@ function EasyPeasyParallax() {
 	scrollPosBottom = $(window).scrollBottom();
 	
 	/* scrollPosBottom = $(document).height(100) - $(window).height() - $(window).scrollTop(); */
-	$('.title').css({
-		'opacity': 0.95-((scrollPos-100/*height until opacity starts (supposed to be 100)*/)/150),
-		//'opacity': 1+((scrollPosBottom)/150)
+	
+	$(document).scroll(function() {
+	    if(scrollPos>190){
+	    	$('.title').css("display", "none");
+	    }else{
+	    	$('.title').css("display", "block");
+	    	$('.title').css({
+				'opacity': 0.95-((scrollPos-50/*height until opacity starts (supposed to be 100)*/)/150),
+				//'opacity': 1+((scrollPosBottom)/150)
+			});
+	    }
+	    
 	});
 	$('#parallax-wrapper .parallax-one').css({
 		'height': 1000-(scrollPos*1.3),
