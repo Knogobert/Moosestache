@@ -58,10 +58,10 @@
   font: 300 1em/1.5 'Merriweather', serif;
   color: #fffcf3; /* Cream White #fffcf3 . color: chooses fontcolor on all of wrapper <p> */
   padding: 0; margin: 0;
-  -webkit-transition: all 0.1s ease;
+  /*-webkit-transition: all 0.1s ease;
 	 -moz-transition: all 0.1s ease;
 	   -o-transition: all 0.1s ease;
-	   	  transition: all 0.1s ease;
+	   	  transition: all 0.1s ease;*/
 }
 
 html, body{
