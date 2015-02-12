@@ -10,6 +10,9 @@
 .white {
     color:#d5d5d5;
 }
+.cream {
+	color:#fffcf3;
+}
 .lightgrey {
     color:#1e1e1e;
 }
@@ -67,7 +70,7 @@
 html, body{
 	margin: 0;
 	padding: 0;
-	background: #1e1814; /*background-image:url("background/bark3.png"); #2f251e orig*/
+	background: #29211C; /*background-image:url("background/bark3.png"); #2f251e orig*/
 }
 
 .wrapper{
@@ -366,12 +369,23 @@ p.footer-bottom-text{
   #parallax-wrapper h2 {font-size:40px;}
   #parallax-wrapper .block {padding: 30px;}
   #parallax-wrapper .parallax-one, #parallax-wrapper .parallax-two, #parallax-wrapper .parallax-three {padding:300px 0 0;}
-  #parallax-wrapper .parallax-one {padding:400px 0 0;}
+  #parallax-wrapper .parallax-one {
+	height:800px;
+	padding-top: 350px; 
+	background-image: url(../img/reindeer-opt-mob.jpg);
+	}
+	#parallax-wrapper .parallax-two {
+		background-image: url(../img/log-opt-mob.jpg); 
+	}
+	#parallax-wrapper .parallax-three {
+		background-image: url(../img/forest-opt-mob.jpg); 
+	}
   
   div.devices{height: 174px;}
+  div#footer-content{margin:50px auto 0;}
   .content{margin-bottom: 350px;}
   .fixed-footer{height: 350px;}
-  div .footer-float {float: none; width: 100%;}
+  div .footer-float {float: none; width: 100%;padding-top: 0;}
   div .footer-float p{padding: 0px;}
 }
 @media screen and (max-width: 600px) {
@@ -391,17 +405,6 @@ p.footer-bottom-text{
 
   	}
   div.devices{height: 126px;}
-  #parallax-wrapper .parallax-one {
-	height:800px;
-	padding-top: 350px; 
-	background-image: url(../img/reindeer-opt-mob.jpg);
-	}
-	#parallax-wrapper .parallax-two {
-		background-image: url(../img/log-opt-mob.jpg); 
-	}
-	#parallax-wrapper .parallax-three {
-		background-image: url(../img/forest-opt-mob.jpg); 
-	}
 }
 @media screen and (max-width: 450px) {
 	#parallax-wrapper .block {width:290px;}
