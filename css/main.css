@@ -269,6 +269,12 @@ opacity: 0.70;
 #parallax-wrapper .parallax-three {
 	background-image: url(../img/forest-opt.jpg); 
 }
+div.devices {
+	background: url(../img/devices.png) no-repeat;
+	background-size: contain;
+	width: 100%;
+	height: 338px;
+}
 
 /* Footer */
 /**************************/
@@ -353,6 +359,7 @@ p.footer-bottom-text{
 /**************************/
 @media screen and (max-width: 959px) and (min-width: 768px) {
   #parallax-wrapper .block {padding: 40px; width:620px;}
+  div.devices{height: 262px;}
 }
 @media screen and (max-width: 767px) {
   #parallax-wrapper .block {padding: 30px; width:420px;}
@@ -361,6 +368,7 @@ p.footer-bottom-text{
   #parallax-wrapper .parallax-one, #parallax-wrapper .parallax-two, #parallax-wrapper .parallax-three {padding:300px 0 0;}
   #parallax-wrapper .parallax-one {padding:400px 0 0;}
   
+  div.devices{height: 174px;}
   .content{margin-bottom: 350px;}
   .fixed-footer{height: 350px;}
   div .footer-float {float: none; width: 100%;}
@@ -382,6 +390,7 @@ p.footer-bottom-text{
 	-webkit-background-size: auto; 
 
   	}
+  div.devices{height: 126px;}
   #parallax-wrapper .parallax-one {
 	height:800px;
 	padding-top: 350px; 
