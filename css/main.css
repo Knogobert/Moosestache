@@ -4,6 +4,53 @@
 @import url(http://fonts.googleapis.com/css?family=Merriweather:300,900);
 /* CSS Document */
 
+/* Color scheme */
+
+/* Base colors */
+.white {
+    color:#d5d5d5;
+}
+.lightgrey {
+    color:#1e1e1e;
+}
+.black {
+    color:#000000;
+}
+
+/* Brown shades */
+.brown-1 {
+    color:#291406;
+}
+.brown-2 {
+    color:#29180b;
+}
+.brown-3 {
+    color:#291b11;
+}
+.brown-4 {
+    color:#291e16;
+}
+.brown-5 {
+    color:#29211c;
+}
+
+/* Green shades */
+.green-1 {
+    color:#0d2f02;
+}
+.green-2 {
+    color:#0f2608;
+}
+.green-3 {
+    color:#14270e;
+}
+.green-4 {
+    color:#182714;
+}
+.green-5 {
+    color:#1d2719;
+}
+
 /* Main formatting */
 
 *, *:before, *:after{
@@ -11,6 +58,10 @@
   font: 300 1em/1.5 'Merriweather', serif;
   color: #fffcf3; /* Cream White #fffcf3 . color: chooses fontcolor on all of wrapper <p> */
   padding: 0; margin: 0;
+  -webkit-transition: all 0.1s ease;
+	 -moz-transition: all 0.1s ease;
+	   -o-transition: all 0.1s ease;
+	   	  transition: all 0.1s ease;
 }
 
 html, body{
@@ -182,7 +233,7 @@ opacity: 0.70;
 /**************************/
 .block-bg {
 	width:100%;
-	background: #2f251e;
+	background: url(../img/background-pattern.png) repeat #2f251e;
 	position: relative;
 	left:0;
 	right:0;
@@ -210,13 +261,13 @@ opacity: 0.70;
 #parallax-wrapper .parallax-one {
 	height:1000px;
 	padding-top: 350px; 
-	background-image: url(../img/reindeer.jpg);
+	background-image: url(../img/reindeer-opt.jpg);
 }
 #parallax-wrapper .parallax-two {
-	background-image: url(../img/log.jpg); 
+	background-image: url(../img/log-opt.jpg); 
 }
 #parallax-wrapper .parallax-three {
-	background-image: url(../img/forestlol4.jpg); 
+	background-image: url(../img/forest-opt.jpg); 
 }
 
 /* Footer */
@@ -226,13 +277,16 @@ opacity: 0.70;
   width: 100%;
   height: 250px;
   background: #29211C; /*#1e1814;*/
-  position: fixed; left: 0; bottom: 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
   z-index: -100;
 
 }
 
 .content{
-  width: 850px; 
+  width: 100%; 
   margin: auto;
   margin-bottom: 250px; /* Same height as footer */
   padding: 0px 0;
@@ -241,15 +295,13 @@ opacity: 0.70;
 div#footer-content {
 	clear: both;
 	margin: auto;
-	height: 250px;
-	background-color: none;}
+}
 
 div .footer-float {
 	float: left;
-    width: 33.3333%; /* NEEED to change when viewport reaches more than 125 % zoom */
+    width: 33.3333%;
     padding-top: 20px;
     text-align: center;
-    background-color: none;
 }
 
 div .footer-float p{
@@ -259,7 +311,6 @@ div .footer-float p{
 
 div#footer-bottom{
 	clear: both;
-	background-color: none;
 	margin-left:-15px;
 }
 
@@ -275,9 +326,9 @@ p.footer-bottom-text{
 .fixed-footer img{
     border: none;
     margin-top: 200px;
-    height: 200px;
     min-height: 60px;
     max-height: 200px;
+    height: 60px;
 }
     
 /* Extras */
@@ -305,10 +356,44 @@ p.footer-bottom-text{
 }
 @media screen and (max-width: 767px) {
   #parallax-wrapper .block {padding: 30px; width:420px;}
-  #parallax-wrapper h2 {font-size:30px;}
+  #parallax-wrapper h2 {font-size:40px;}
   #parallax-wrapper .block {padding: 30px;}
-  #parallax-wrapper .parallax-one, #parallax-wrapper .parallax-two, #parallax-wrapper .parallax-three {padding-top:100px; padding-bottom:100px;}
+  #parallax-wrapper .parallax-one, #parallax-wrapper .parallax-two, #parallax-wrapper .parallax-three {padding:300px 0 0;}
+  #parallax-wrapper .parallax-one {padding:400px 0 0;}
+  
+  .content{margin-bottom: 350px;}
+  .fixed-footer{height: 350px;}
+  div .footer-float {float: none; width: 100%;}
+  div .footer-float p{padding: 0px;}
 }
-@media screen and (max-width: 479px) {
-  #parallax-wrapper .block {padding: 30px 15px; width:290px;}
+@media screen and (max-width: 600px) {
+  #parallax-wrapper .title {padding: 20px;}
+  #parallax-wrapper .block {padding: 30px 15px; width:400px;}
+  #parallax-wrapper h2 {font-size:30px;}
+  p{padding: 0 0 10px 0;}
+  .margin-top-10 {padding-top:5px;}
+  .margin-bot-10 {padding-bottom:5px;}
+  #parallax-wrapper .parallax-one, #parallax-wrapper .parallax-two, #parallax-wrapper .parallax-three {
+  	padding:160px 0 0;
+  	height:500px;
+  	background-attachment: scroll;
+  			background-size: auto; 
+	   -moz-background-size: auto; 
+	-webkit-background-size: auto; 
+
+  	}
+  #parallax-wrapper .parallax-one {
+	height:800px;
+	padding-top: 350px; 
+	background-image: url(../img/reindeer-opt-mob.jpg);
+	}
+	#parallax-wrapper .parallax-two {
+		background-image: url(../img/log-opt-mob.jpg); 
+	}
+	#parallax-wrapper .parallax-three {
+		background-image: url(../img/forest-opt-mob.jpg); 
+	}
+}
+@media screen and (max-width: 450px) {
+	#parallax-wrapper .block {width:290px;}
 }
